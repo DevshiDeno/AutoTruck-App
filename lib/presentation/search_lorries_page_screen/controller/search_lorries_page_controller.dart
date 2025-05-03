@@ -1,3 +1,4 @@
+import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:truck_booking/core/app_export.dart';
 import 'package:truck_booking/presentation/search_lorries_page_screen/models/search_lorries_page_model.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,7 @@ class SearchLorriesPageController extends GetxController {
   Rx<SearchLorriesPageModel> searchLorriesPageModelObj =
       SearchLorriesPageModel().obs;
 
-  SelectionPopupModel? selectedDropDownValue;
+  DropDownValueModel? selectedDropDownValue;
 
   @override
   void onReady() {
@@ -22,10 +23,10 @@ class SearchLorriesPageController extends GetxController {
   }
 
   onSelected(dynamic value) {
-    selectedDropDownValue = value as SelectionPopupModel;
+    selectedDropDownValue = value as DropDownValueModel;
     searchLorriesPageModelObj.value.dropdownItemList.forEach((element) {
       element.isSelected = false;
-      if (element.id == value.id) {
+      if (element.id == value) {
         element.isSelected = true;
       }
     });

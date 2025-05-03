@@ -4,6 +4,6 @@ import 'package:get/get.dart';
 class LorryDetailPublicPageBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => LorryDetailPublicPageController());
+    Get.lazyPut(() => TruckDetailsPageController());
   }
 }

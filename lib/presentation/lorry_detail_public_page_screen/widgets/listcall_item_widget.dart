@@ -10,7 +10,7 @@ class ListcallItemWidget extends StatelessWidget {
 
   ListcallItemModel listcallItemModelObj;
 
-  var controller = Get.find<LorryDetailPublicPageController>();
+  var controller = Get.find<TruckDetailsPageController>();
 
   @override
   Widget build(BuildContext context) {

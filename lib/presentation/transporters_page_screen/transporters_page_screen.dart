@@ -62,17 +62,14 @@ class TransportersPageScreen extends GetWidget<TransportersPageController> {
                                         style: AppStyle
                                             .txtMontserratBold14Gray90087
                                             .copyWith(letterSpacing: 1.12))),
-                                CustomDropDown(
-                                    width: 113,
-                                    focusNode: FocusNode(),
-                                    icon: Icon(Icons.keyboard_arrow_down_sharp),
-                                    hintText: "lbl_popular".tr,
-                                    variant: DropDownVariant.OutlineGray90063,
-                                    items: controller.transportersPageModelObj
-                                        .value.dropdownItemList,
-                                    onChanged: (value) {
-                                      controller.onSelected(value);
-                                    })
+                                // SelectDropDown(
+                                //
+                                //     hint: "lbl_popular".tr,
+                                //     dropdownItems: controller.transportersPageModelObj
+                                //         .value.dropdownItemList,
+                                //     onChanged: (value) {
+                                //       controller.onSelected(value);
+                                //     })
                               ]))),
                   Container(
                       height: getVerticalSize(1.00),

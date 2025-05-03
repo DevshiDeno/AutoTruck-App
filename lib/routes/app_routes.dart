@@ -1,51 +1,48 @@
-import 'package:truck_booking/presentation/sign_up_page_screen/sign_up_page_screen.dart';
-import 'package:truck_booking/presentation/sign_up_page_screen/binding/sign_up_page_binding.dart';
-import 'package:truck_booking/presentation/sign_up_page_one_screen/sign_up_page_one_screen.dart';
-import 'package:truck_booking/presentation/sign_up_page_one_screen/binding/sign_up_page_one_binding.dart';
-import 'package:truck_booking/presentation/home_page_screen/home_page_screen.dart';
-import 'package:truck_booking/presentation/home_page_screen/binding/home_page_binding.dart';
-import 'package:truck_booking/presentation/home_page_one_screen/home_page_one_screen.dart';
-import 'package:truck_booking/presentation/home_page_one_screen/binding/home_page_one_binding.dart';
-import 'package:truck_booking/presentation/select_location_page_screen/select_location_page_screen.dart';
-import 'package:truck_booking/presentation/select_location_page_screen/binding/select_location_page_binding.dart';
-import 'package:truck_booking/presentation/latest_lorries_page_screen/latest_lorries_page_screen.dart';
-import 'package:truck_booking/presentation/latest_lorries_page_screen/binding/latest_lorries_page_binding.dart';
-import 'package:truck_booking/presentation/lorry_detail_public_page_screen/lorry_detail_public_page_screen.dart';
-import 'package:truck_booking/presentation/lorry_detail_public_page_screen/binding/lorry_detail_public_page_binding.dart';
-import 'package:truck_booking/presentation/post_load_full_page_screen/post_load_full_page_screen.dart';
-import 'package:truck_booking/presentation/post_load_full_page_screen/binding/post_load_full_page_binding.dart';
-import 'package:truck_booking/presentation/transporters_page_screen/transporters_page_screen.dart';
-import 'package:truck_booking/presentation/transporters_page_screen/binding/transporters_page_binding.dart';
-import 'package:truck_booking/presentation/menu_page_screen/menu_page_screen.dart';
-import 'package:truck_booking/presentation/menu_page_screen/binding/menu_page_binding.dart';
-import 'package:truck_booking/presentation/personal_view_profile_page_screen/personal_view_profile_page_screen.dart';
-import 'package:truck_booking/presentation/personal_view_profile_page_screen/binding/personal_view_profile_page_binding.dart';
-import 'package:truck_booking/presentation/personal_profile_page_full_screen/personal_profile_page_full_screen.dart';
-import 'package:truck_booking/presentation/personal_profile_page_full_screen/binding/personal_profile_page_full_binding.dart';
-import 'package:truck_booking/presentation/favorites_page_screen/favorites_page_screen.dart';
-import 'package:truck_booking/presentation/favorites_page_screen/binding/favorites_page_binding.dart';
-import 'package:truck_booking/presentation/search_lorries_page_screen/search_lorries_page_screen.dart';
-import 'package:truck_booking/presentation/search_lorries_page_screen/binding/search_lorries_page_binding.dart';
-import 'package:truck_booking/presentation/my_loads_page_screen/my_loads_page_screen.dart';
-import 'package:truck_booking/presentation/my_loads_page_screen/binding/my_loads_page_binding.dart';
-import 'package:truck_booking/presentation/customer_care_page_screen/customer_care_page_screen.dart';
-import 'package:truck_booking/presentation/customer_care_page_screen/binding/customer_care_page_binding.dart';
-import 'package:truck_booking/presentation/customer_care_page_full_screen/customer_care_page_full_screen.dart';
-import 'package:truck_booking/presentation/customer_care_page_full_screen/binding/customer_care_page_full_binding.dart';
-import 'package:truck_booking/presentation/select_language_page_screen/select_language_page_screen.dart';
-import 'package:truck_booking/presentation/select_language_page_screen/binding/select_language_page_binding.dart';
-import 'package:truck_booking/presentation/app_navigation_screen/app_navigation_screen.dart';
-import 'package:truck_booking/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
 import 'package:get/get.dart';
+import 'package:truck_booking/presentation/bottomBar/bottom_bar.dart';
+import 'package:truck_booking/presentation/customer_care_page_full_screen/binding/customer_care_page_full_binding.dart';
+import 'package:truck_booking/presentation/customer_care_page_full_screen/customer_care_page_full_screen.dart';
+import 'package:truck_booking/presentation/customer_care_page_screen/binding/customer_care_page_binding.dart';
+import 'package:truck_booking/presentation/customer_care_page_screen/customer_care_page_screen.dart';
+import 'package:truck_booking/presentation/favorites_page_screen/binding/favorites_page_binding.dart';
+import 'package:truck_booking/presentation/favorites_page_screen/favorites_page_screen.dart';
+import 'package:truck_booking/presentation/home_page_screen/binding/home_page_binding.dart';
+import 'package:truck_booking/presentation/home_page_screen/home_page_screen.dart';
+import 'package:truck_booking/presentation/lorry_detail_public_page_screen/binding/lorry_detail_public_page_binding.dart';
+import 'package:truck_booking/presentation/lorry_detail_public_page_screen/truck_detail_public_page_screen.dart';
+import 'package:truck_booking/presentation/menu_page_screen/binding/menu_page_binding.dart';
+import 'package:truck_booking/presentation/menu_page_screen/menu_page_screen.dart';
+import 'package:truck_booking/presentation/onboarding_screen/onboarding_screen.dart';
+import 'package:truck_booking/presentation/personal_profile_page_full_screen/binding/personal_profile_page_full_binding.dart';
+import 'package:truck_booking/presentation/personal_profile_page_full_screen/personal_profile_page_full_screen.dart';
+import 'package:truck_booking/presentation/personal_view_profile_page_screen/binding/personal_view_profile_page_binding.dart';
+import 'package:truck_booking/presentation/personal_view_profile_page_screen/personal_view_profile_page_screen.dart';
+import 'package:truck_booking/presentation/search_lorries_page_screen/binding/search_lorries_page_binding.dart';
+import 'package:truck_booking/presentation/search_lorries_page_screen/search_lorries_page_screen.dart';
+import 'package:truck_booking/presentation/select_language_page_screen/binding/select_language_page_binding.dart';
+import 'package:truck_booking/presentation/select_language_page_screen/select_language_page_screen.dart';
+import 'package:truck_booking/presentation/select_location_page_screen/binding/select_location_page_binding.dart';
+import 'package:truck_booking/presentation/select_location_page_screen/select_location_page_screen.dart';
+import 'package:truck_booking/presentation/sign_up_page_one_screen/Otp_confirm.dart';
+import 'package:truck_booking/presentation/sign_up_page_one_screen/binding/sign_up_page_one_binding.dart';
+import 'package:truck_booking/presentation/sign_up_page_screen/binding/sign_up_page_binding.dart';
+import 'package:truck_booking/presentation/sign_up_page_screen/sign_up_page_screen.dart';
+import 'package:truck_booking/presentation/transporters_page_screen/binding/transporters_page_binding.dart';
+import 'package:truck_booking/presentation/transporters_page_screen/transporters_page_screen.dart';
+
+import '../presentation/bottomBar/bottom_bar_binding.dart';
+import '../presentation/notification/notification_page.dart';
+import '../presentation/onboarding_screen/onboarding_binding.dart';
 
 class AppRoutes {
+  static String onboarding = '/onboarding_screen';
+
   static String signUpPageScreen = '/sign_up_page_screen';
 
   static String signUpPageOneScreen = '/sign_up_page_one_screen';
 
   static String homePageScreen = '/home_page_screen';
-
-  static String homePageOneScreen = '/home_page_one_screen';
+  static String bottomBar = '/bottom_bar';
 
   static String selectLocationPageScreen = '/select_location_page_screen';
 
@@ -67,10 +64,9 @@ class AppRoutes {
       '/personal_profile_page_full_screen';
 
   static String favoritesPageScreen = '/favorites_page_screen';
+  static String notificationPage = '/notification_page';
 
   static String searchLorriesPageScreen = '/search_lorries_page_screen';
-
-  static String myLoadsPageScreen = '/my_loads_page_screen';
 
   static String customerCarePageScreen = '/customer_care_page_screen';
 
@@ -78,7 +74,6 @@ class AppRoutes {
 
   static String selectLanguagePageScreen = '/select_language_page_screen';
 
-  static String appNavigationScreen = '/app_navigation_screen';
 
   static String initialRoute = '/initialRoute';
 
@@ -86,22 +81,18 @@ class AppRoutes {
     {"name": "/sign_up_page_screen", "page": SignUpPageScreen()},
     {"name": "/sign_up_page_one_screen", "page": SignUpPageOneScreen()},
     {"name": "/home_page_screen", "page": HomePageScreen()},
-    {"name": "/home_page_one_screen", "page": HomePageOneScreen()},
+    {"name": "bottomBar", "page": AutoTruckBottomBar()},
     {
       "name": "/select_location_page_screen",
       "page": SelectLocationPageScreen()
     },
-    {"name": "/latest_lorries_page_screen", "page": LatestLorriesPageScreen()},
-    {
-      "name": "/lorry_detail_public_page_screen",
-      "page": LorryDetailPublicPageScreen()
-    },
-    {"name": "/post_load_full_page_screen", "page": PostLoadFullPageScreen()},
+    {"name": "/lorry_detail_public_page_screen", "page": TruckDetailsPage()},
+    {"name": "/notification_page", "page": NotificationPage()},
     {"name": "/transporters_page_screen", "page": TransportersPageScreen()},
     {"name": "/menu_page_screen", "page": MenuPageScreen()},
     {
       "name": "/personal_view_profile_page_screen",
-      "page": PersonalViewProfilePageScreen()
+      "page": ProfilePage()
     },
     {
       "name": "/personal_profile_page_full_screen",
@@ -109,7 +100,6 @@ class AppRoutes {
     },
     {"name": "/favorites_page_screen", "page": FavoritesPageScreen()},
     {"name": "/search_lorries_page_screen", "page": SearchLorriesPageScreen()},
-    {"name": "/my_loads_page_screen", "page": MyLoadsPageScreen()},
     {"name": "/customer_care_page_screen", "page": CustomerCarePageScreen()},
     {
       "name": "/customer_care_page_full_screen",
@@ -119,11 +109,17 @@ class AppRoutes {
       "name": "/select_language_page_screen",
       "page": SelectLanguagePageScreen()
     },
-    {"name": "/app_navigation_screen", "page": AppNavigationScreen()},
     {"name": "/initialRoute", "page": SignUpPageScreen()}
   ];
 
   static List<GetPage> pages = [
+    GetPage(
+      name: onboarding,
+      page: () => OnboardingScreen(),
+      bindings: [
+        OnboardingBinding(),
+      ],
+    ),
     GetPage(
       name: signUpPageScreen,
       page: () => SignUpPageScreen(),
@@ -145,12 +141,11 @@ class AppRoutes {
         HomePageBinding(),
       ],
     ),
-    GetPage(
-      name: homePageOneScreen,
-      page: () => HomePageOneScreen(),
-      bindings: [
-        HomePageOneBinding(),
-      ],
+
+    GetPage(name: bottomBar, page: () => AutoTruckBottomBar(),
+    bindings: [
+      BottomBarBinding(),
+    ]
     ),
     GetPage(
       name: selectLocationPageScreen,
@@ -160,24 +155,16 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: latestLorriesPageScreen,
-      page: () => LatestLorriesPageScreen(),
-      bindings: [
-        LatestLorriesPageBinding(),
-      ],
-    ),
-    GetPage(
       name: lorryDetailPublicPageScreen,
-      page: () => LorryDetailPublicPageScreen(),
+      page: () => TruckDetailsPage(),
       bindings: [
         LorryDetailPublicPageBinding(),
       ],
     ),
     GetPage(
-      name: postLoadFullPageScreen,
-      page: () => PostLoadFullPageScreen(),
+      name:notificationPage ,
+      page: () => NotificationPage(),
       bindings: [
-        PostLoadFullPageBinding(),
       ],
     ),
     GetPage(
@@ -198,7 +185,7 @@ class AppRoutes {
     ),
     GetPage(
       name: personalViewProfilePageScreen,
-      page: () => PersonalViewProfilePageScreen(),
+      page: () => ProfilePage(),
       transition: Transition.leftToRight,
       transitionDuration: Duration(milliseconds: 350),
       bindings: [
@@ -227,13 +214,6 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: myLoadsPageScreen,
-      page: () => MyLoadsPageScreen(),
-      bindings: [
-        MyLoadsPageBinding(),
-      ],
-    ),
-    GetPage(
       name: customerCarePageScreen,
       page: () => CustomerCarePageScreen(),
       bindings: [
@@ -252,13 +232,6 @@ class AppRoutes {
       page: () => SelectLanguagePageScreen(),
       bindings: [
         SelectLanguagePageBinding(),
-      ],
-    ),
-    GetPage(
-      name: appNavigationScreen,
-      page: () => AppNavigationScreen(),
-      bindings: [
-        AppNavigationBinding(),
       ],
     ),
     GetPage(

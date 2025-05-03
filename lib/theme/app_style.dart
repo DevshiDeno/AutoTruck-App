@@ -86,7 +86,7 @@ class AppStyle {
   static TextStyle txtMontserratBold32 = TextStyle(
     color: ColorConstant.gray900,
     fontSize: getFontSize(
-      32,
+      64,
     ),
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w700,
@@ -374,7 +374,7 @@ class AppStyle {
   static TextStyle txtMontserratMedium16Gray90090 = TextStyle(
     color: ColorConstant.gray90090,
     fontSize: getFontSize(
-      16,
+      14,
     ),
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w500,

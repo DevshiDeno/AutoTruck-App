@@ -80,23 +80,15 @@ class SearchLorriesPageScreen extends GetWidget<SearchLorriesPageController> {
                                                     .txtMontserratBold14Gray9007e
                                                     .copyWith(
                                                         letterSpacing: 0.84))),
-                                        CustomDropDown(
-                                            width: 119,
-                                            focusNode: FocusNode(),
-                                            icon: Container(
-                                                margin: getMargin(
-                                                    left: 10, right: 12),
-                                                child: CommonImageView(
-                                                    svgPath: ImageConstant
-                                                        .imgArrowleft)),
-                                            hintText: "lbl_relevance".tr,
-                                            items: controller
-                                                .searchLorriesPageModelObj
-                                                .value
-                                                .dropdownItemList,
-                                            onChanged: (value) {
-                                              controller.onSelected(value);
-                                            })
+                                        // SelectDropDown(
+                                        //     hint: "lbl_relevance".tr,
+                                        //     dropdownItems: controller
+                                        //         .searchLorriesPageModelObj
+                                        //         .value
+                                        //         .dropdownItemList,
+                                        //     onChanged: (value) {
+                                        //       controller.onSelected(value);
+                                        //     })
                                       ]))),
                           Align(
                               alignment: Alignment.center,

@@ -1,41 +1,35 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 
-// For checking internet connectivity
+/// Abstract class for network information
 abstract class NetworkInfoI {
   Future<bool> isConnected();
 
   Future<ConnectivityResult> get connectivityResult;
 
-  Stream<ConnectivityResult> get onConnectivityChanged;
+  Stream<List<ConnectivityResult>> get onConnectivityChanged;
 }
 
+/// Implementation using [connectivity_plus]
 class NetworkInfo implements NetworkInfoI {
-  Connectivity connectivity;
+  final Connectivity _connectivity;
 
-  NetworkInfo(this.connectivity) {
-    connectivity = this.connectivity;
-  }
+  NetworkInfo(this._connectivity);
 
-  ///checks internet is connected or not
-  ///returns [true] if internet is connected
-  ///else it will return [false]
+  /// Checks if the device is connected to the internet
   @override
   Future<bool> isConnected() async {
-    final result = await connectivity.checkConnectivity();
-    if (result != ConnectivityResult.none) {
-      return true;
-    }
-    return false;
+    final result = await _connectivity.checkConnectivity();
+    return result != ConnectivityResult.none;
   }
 
-  // to check type of internet connectivity
-  @override
-  Future<ConnectivityResult> get connectivityResult async {
-    return connectivity.checkConnectivity();
-  }
+  /// Returns the current connectivity result
 
-  //check the type on internet connection on changed of internet connection
+  /// Emits connectivity changes over time
   @override
-  Stream<ConnectivityResult> get onConnectivityChanged =>
-      connectivity.onConnectivityChanged;
+  Stream<List<ConnectivityResult>> get onConnectivityChanged =>
+      _connectivity.onConnectivityChanged;
+
+  @override
+  // TODO: implement connectivityResult
+  Future<ConnectivityResult> get connectivityResult => throw UnimplementedError();
 }

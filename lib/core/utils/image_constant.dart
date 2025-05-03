@@ -1,5 +1,20 @@
 class ImageConstant {
+  static String autoTruckLogo = "assets/images/auto_truck_logo.png";
+  static String bulldozer = "assets/images/bulldozer.jpg";
+  static String excavator = "assets/images/excavator.jfif.jpg";
+  static String forklift = "assets/images/forklift.jpg";
+  static String graders = "assets/images/graders.png";
+  static String tata = "assets/images/tata.jpg";
+  static String vannette = "assets/images/vannette.jpg";
+  static String mitsubishi = "assets/images/mistubishi.jpg";
+  static String mapIcon = "assets/images/map.svg";
+  static String smileIcon = "assets/images/smile.svg";
+  static String truck = "assets/images/truck.svg";
+  static String cargo = "assets/images/cargo.svg";
+  static String funnel = "assets/images/filter_funnel.svg";
   static String imgButtons = 'assets/images/img_buttons.svg';
+  static String verified= 'assets/images/verified.png';
+  static String workInProgress = 'assets/images/work_in_progress.svg';
 
   static String imgCar = 'assets/images/img_car.svg';
 
@@ -28,12 +43,12 @@ class ImageConstant {
 
   static String imgProfile = 'assets/images/img_profile.png';
 
-  static String imgPhoneIcon = 'assets/images/img_phoneIcon.png';
+  static String imgPhoneIcon = 'assets/images/Phone.png';
 
   static String imgArrowrightTeal300 =
       'assets/images/img_arrowright_teal_300.svg';
 
-  static String imgMenu = 'assets/images/img_menu.svg';
+  static String imgMenu = 'assets/images/menu.svg';
 
   static String imgClock = 'assets/images/img_clock.svg';
 
@@ -51,7 +66,7 @@ class ImageConstant {
 
   static String imgCar4 = 'assets/images/img_car_4.svg';
 
-  static String imgSearchGray900 = 'assets/images/img_search_gray_900.svg';
+  static String imgSearchGray900 = 'assets/images/search.svg';
 
   static String imgVideocamera7x18 = 'assets/images/img_videocamera_7x18.svg';
 
@@ -99,7 +114,7 @@ class ImageConstant {
 
   static String imgSettings20x20 = 'assets/images/img_settings_20x20.svg';
 
-  static String imgNotification = 'assets/images/img_notification.svg';
+  static String imgNotification = 'assets/images/Bell.svg';
 
   static String imgCar8 = 'assets/images/img_car_8.svg';
 
@@ -111,7 +126,7 @@ class ImageConstant {
 
   static String imgVolume = 'assets/images/img_volume.svg';
 
-  static String imgSearch = 'assets/images/img_search.svg';
+  static String imgSearch = 'assets/images/search.svg';
 
   static String imgMail = 'assets/images/img_mail.svg';
 

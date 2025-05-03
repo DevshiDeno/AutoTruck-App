@@ -1,3 +1,4 @@
+import '../../core/utils/spacing.dart';
 import 'controller/sign_up_page_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:truck_booking/core/app_export.dart';
@@ -17,23 +18,7 @@ class SignUpPageScreen extends GetWidget<SignUpPageController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.all(26),
-                    height: 50,
-                    width: 50,
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.arrow_back_ios_new_rounded,
-                        size: 20,
-                      ),
-                      onPressed: () {},
-                    ),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(
-                            color: Colors.grey.shade200, width: 2)),
-                  ),
+                  Spacing.bigHeight(),
                   Container(
                       width: getHorizontalSize(260.00),
                       margin: getMargin(left: 24, top: 24, right: 24),
@@ -88,7 +73,7 @@ class SignUpPageScreen extends GetWidget<SignUpPageController> {
                                     color: Colors.grey.shade200,
                                     width: 2))),
                         SizedBox(
-                          child: Text("  +91  ",style: AppStyle
+                          child: Text("  +254  ",style: AppStyle
                               .txtMontserratSemiBold16Gray900a2,),
                         ),
                         Container(
@@ -140,20 +125,13 @@ class SignUpPageScreen extends GetWidget<SignUpPageController> {
                       width: size.width,
                       decoration:
                       BoxDecoration(color: Colors.grey.shade200)),
-                  Padding(
-                      padding: getPadding(left: 32, top: 22, right: 32),
-                      child: Text("INFORMATION:",
-                          overflow: TextOverflow.ellipsis,
-                          textAlign: TextAlign.left,
-                          style: AppStyle.txtMontserratBold14
-                              .copyWith(letterSpacing: 0.56))),
                   Container(
                       margin: getMargin(
                           left: 32, top: 14, right: 32, bottom: 22),
                       child: RichText(
                           text: TextSpan(children: [
                             TextSpan(
-                                text: "By creating your account on G7 Truckers you agree to our ",
+                                text: "By creating your account on AutoTruck Africa you agree to our ",
                                 style: TextStyle(
                                     color: ColorConstant.gray90099,
                                     fontSize: getFontSize(14),
