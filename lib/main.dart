@@ -1,11 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/app_export.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(systemNavigationBarColor:Colors.black87),
+  );
+
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]).then((value) {
@@ -38,7 +45,7 @@ class MyApp extends StatelessWidget {
             fallbackLocale: Locale('en', 'US'),
             title: 'truck_booking',
             initialBinding: InitialBindings(),
-            initialRoute: AppRoutes.bottomBar,
+            initialRoute: AppRoutes.onboarding,
             getPages: AppRoutes.pages,
           );
         });
