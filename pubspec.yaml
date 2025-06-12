@@ -1,0 +1,70 @@
+name: truck_booking
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  get: ^4.6.5
+  connectivity_plus: ^6.1.4
+  like_button: ^2.0.5
+  shared_preferences: ^2.0.15
+  cached_network_image: ^3.4.1
+  flutter_otp_text_field: ^1.1.0+2
+  flutter_svg: ^2.1.0
+  intl: ^0.20.2
+  velocity_x: ^4.3.1
+  flutter_lorem: ^2.0.0
+  searchbar_animation: ^0.0.4
+  draggable_scrollbar: ^0.1.0
+  country_pickers: ^3.0.1
+  flutter_secure_storage: ^9.2.4
+  get_storage: ^2.1.1
+  dots_indicator: ^2.1.1
+  fluttertoast: ^8.2.12
+  flutter_screenutil: ^5.9.3
+  dropdown_textfield: ^1.2.0
+  carousel_slider: ^5.0.0
+  flutter_rating_stars: ^1.1.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.14.3"
+  flutter_native_splash: ^2.4.4
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/MontserratBold.ttf
+          weight: 700
+        - asset: assets/fonts/MontserratMedium.ttf
+          weight: 500
+        - asset: assets/fonts/MontserratSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/MontserratRegular.ttf
+          weight: 400
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/images/logo.png"
+  android: true
+  ios: true
+  android_12:
+    image: "assets/images/logo.png"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
